@@ -1,0 +1,1 @@
+# meta-labtool-binaries
