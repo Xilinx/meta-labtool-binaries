@@ -1,3 +1,8 @@
+#
+# Copyright (C) 2023, Advanced Micro Devices, Inc. All rights reserved.
+# SPDX-License-Identifier: MIT
+#
+
 SUMMARY = "Recipe to embedded loguru Python Package"
 HOMEPAGE ="https://pypi.org/project/loguru"
 LICENSE = "MIT"

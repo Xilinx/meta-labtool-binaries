@@ -1,3 +1,8 @@
+#
+# Copyright (C) 2023, Advanced Micro Devices, Inc. All rights reserved.
+# SPDX-License-Identifier: MIT
+#
+
 DESCRIPTION = "Labtool (hw_server, xsdb, xvc_server) support for vck190 system controller"
 SUMMARY = "Labtool (hw_server, xsdb, xvc_server) support for vck190 system controller"
 
@@ -8,12 +13,12 @@ LIC_FILES_CHKSUM = "file://license/LICENSE_PBO;md5=fb790ca133353ea709bb11d2d33db
                     file://license/LICENSE_3RD_PARTY_CS_SERVER;md5=38e14296063e0ca8b88c1a5149284bd6 \
 "
 
-BRANCH = "xlnx_rel_v2023.1"
+BRANCH = "2023.2dev"
 SRC_URI = " \
 	git://github.com/Xilinx/systemctl-labtool.git;branch=${BRANCH};protocol=https \
 	file://xsdb.service \
 "
-SRCREV = "697c375bb772a8d842db1b1f276b07f8d6024607"
+SRCREV = "4b94974d34ab54f4f366b81d3dc14f05086f8e21"
 
 inherit update-rc.d systemd
 
