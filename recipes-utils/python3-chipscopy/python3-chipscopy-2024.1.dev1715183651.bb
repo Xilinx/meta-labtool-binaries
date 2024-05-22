@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MIT
 #
 
-SUMMARY = "Recipe to add 2022.1 ChipScopy Python Package"
+SUMMARY = "Recipe to add 2024.1dev ChipScopy Python Package"
 LICENSE = "Apache-2.0 & EPL-2.0"
 LIC_FILES_CHKSUM = "file://LICENSE;md5=e044f1626fcb471118a71a253d550cb1 \
                     file://epl-v20.html;md5=84283fa8859daf213bdda5a9f8d1be1d \
@@ -11,11 +11,11 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=e044f1626fcb471118a71a253d550cb1 \
 
 inherit  python3-dir
 
-SRC_URI = "https://files.pythonhosted.org/packages/bc/08/ca0e882566012b2cf539449d609b6ff3e26808011815974173b44be765ee/chipscopy-2023.2.dev1694723382-py3-none-any.whl;downloadfilename=chipscopy-2023.2.dev1694723382-py3-none-any.zip;subdir=${BP}"
+SRC_URI = "https://files.pythonhosted.org/packages/0c/d5/559e0a2a384acd1364461b49043c6757ef14f0df4cb321e90aa11a9c439e/chipscopy-2024.1.dev1715183651-py3-none-any.whl;downloadfilename=chipscopy-2024.1.dev1715183651-py3-none-any.zip;subdir=${BP}"
 
 
-SRC_URI[md5sum] = "4aa5db2c4be84e4097c93c4b75e7e6bd"
-SRC_URI[sha256sum] = "a341ddfc13a8036ca707223ddb4e650e63ba126f513ce55636e0b37b464864d7"
+SRC_URI[md5sum] = "d4c2e4aa6f230d45ce8e2ab2d2e2fff9"
+SRC_URI[sha256sum] = "845f202abde1e4d00623487e5fb209e454f47769a97dee7804f24e03d6a7f144"
 
 PN = "python3-chipscopy"
 
@@ -44,9 +44,9 @@ FILES:${PN} += "\
 "
 
 do_install() {
-    install -d ${D}${libdir}/${PYTHON_DIR}/site-packages/chipscopy-2023.2.dev1694723382.dist-info
+    install -d ${D}${libdir}/${PYTHON_DIR}/site-packages/chipscopy-2024.1.dev1715183651.dist-info
     install -d ${D}${libdir}/${PYTHON_DIR}/site-packages/chipscopy
 
     cp -r ${S}/chipscopy/* ${D}${libdir}/${PYTHON_DIR}/site-packages/chipscopy/
-    cp -r ${S}/chipscopy-2023.2.dev1694723382.dist-info/* ${D}${libdir}/${PYTHON_DIR}/site-packages/chipscopy-2023.2.dev1694723382.dist-info/
+    cp -r ${S}/chipscopy-2024.1.dev1715183651.dist-info/* ${D}${libdir}/${PYTHON_DIR}/site-packages/chipscopy-2024.1.dev1715183651.dist-info/
 }
