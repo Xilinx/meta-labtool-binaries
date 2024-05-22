@@ -3,8 +3,8 @@
 # SPDX-License-Identifier: MIT
 #
 
-DESCRIPTION = "Labtool (hw_server, xsdb, xvc_server) support for vck190 system controller"
-SUMMARY = "Labtool (hw_server, xsdb, xvc_server) support for vck190 system controller"
+DESCRIPTION = "Labtool (hw_server, xsdb, xvc_server) support for aarch64"
+SUMMARY = "Labtool (hw_server, xsdb, xvc_server) support"
 
 LICENSE = "Proprietary & MIT"
 LIC_FILES_CHKSUM = "file://license/LICENSE_PBO;md5=fb790ca133353ea709bb11d2d33db8b3 \
@@ -13,12 +13,12 @@ LIC_FILES_CHKSUM = "file://license/LICENSE_PBO;md5=fb790ca133353ea709bb11d2d33db
                     file://license/LICENSE_3RD_PARTY_CS_SERVER;md5=38e14296063e0ca8b88c1a5149284bd6 \
 "
 
-BRANCH = "2023.2dev"
+BRANCH = "2024.1dev"
 SRC_URI = " \
 	git://github.com/Xilinx/systemctl-labtool.git;branch=${BRANCH};protocol=https \
 	file://xsdb.service \
 "
-SRCREV = "4b94974d34ab54f4f366b81d3dc14f05086f8e21"
+SRCREV = "3535dd8a690fa8ff4a5e1429cffe29ff718b990b"
 
 inherit update-rc.d systemd
 
