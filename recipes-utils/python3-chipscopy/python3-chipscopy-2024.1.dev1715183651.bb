@@ -14,8 +14,8 @@ inherit  python3-dir
 SRC_URI = "https://files.pythonhosted.org/packages/0c/d5/559e0a2a384acd1364461b49043c6757ef14f0df4cb321e90aa11a9c439e/chipscopy-2024.1.dev1715183651-py3-none-any.whl;downloadfilename=chipscopy-2024.1.dev1715183651-py3-none-any.zip;subdir=${BP}"
 
 
-SRC_URI[md5sum] = "d4c2e4aa6f230d45ce8e2ab2d2e2fff9"
-SRC_URI[sha256sum] = "845f202abde1e4d00623487e5fb209e454f47769a97dee7804f24e03d6a7f144"
+SRC_URI[md5sum] = "0a7ea4300b25600e8db4df46bf18d5f2"
+SRC_URI[sha256sum] = "8b5b4755332da5ce5397e1a067851e0c126cabe4bcda5cd3787199c3da99b46e"
 
 PN = "python3-chipscopy"
 
