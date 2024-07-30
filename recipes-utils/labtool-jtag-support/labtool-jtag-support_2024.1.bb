@@ -18,7 +18,7 @@ SRC_URI = " \
 	git://github.com/Xilinx/systemctl-labtool.git;branch=${BRANCH};protocol=https \
 	file://xsdb.service \
 "
-SRCREV = "3535dd8a690fa8ff4a5e1429cffe29ff718b990b"
+SRCREV = "9095ad8c9a66b41d9756ce1223a02304e56423dd"
 
 inherit update-rc.d systemd
 

@@ -11,11 +11,11 @@ LIC_FILES_CHKSUM = "file://LICENSE;md5=e044f1626fcb471118a71a253d550cb1 \
 
 inherit  python3-dir
 
-SRC_URI = "https://files.pythonhosted.org/packages/0c/d5/559e0a2a384acd1364461b49043c6757ef14f0df4cb321e90aa11a9c439e/chipscopy-2024.1.dev1715183651-py3-none-any.whl;downloadfilename=chipscopy-2024.1.dev1715183651-py3-none-any.zip;subdir=${BP}"
+SRC_URI = "https://files.pythonhosted.org/packages/23/24/14ac5a54c06735ff9cbdf8192a5791e7fbe15f838416b532066667c0a9d6/chipscopy-2024.1.1717799899-py3-none-any.whl;downloadfilename=chipscopy-2024.1.1717799899-py3-none-any.zip;subdir=${BP}"
 
 
-SRC_URI[md5sum] = "0a7ea4300b25600e8db4df46bf18d5f2"
-SRC_URI[sha256sum] = "8b5b4755332da5ce5397e1a067851e0c126cabe4bcda5cd3787199c3da99b46e"
+SRC_URI[md5sum] = "1ed749dd35a8577bdf799b6277727f0f"
+SRC_URI[sha256sum] = "a411cc29d78962483a8336f4539b06b276bb6b6990c97521019e0e24e0f4bf2d"
 
 PN = "python3-chipscopy"
 
@@ -44,9 +44,9 @@ FILES:${PN} += "\
 "
 
 do_install() {
-    install -d ${D}${libdir}/${PYTHON_DIR}/site-packages/chipscopy-2024.1.dev1715183651.dist-info
+    install -d ${D}${libdir}/${PYTHON_DIR}/site-packages/chipscopy-2024.1.1717799899.dist-info
     install -d ${D}${libdir}/${PYTHON_DIR}/site-packages/chipscopy
 
     cp -r ${S}/chipscopy/* ${D}${libdir}/${PYTHON_DIR}/site-packages/chipscopy/
-    cp -r ${S}/chipscopy-2024.1.dev1715183651.dist-info/* ${D}${libdir}/${PYTHON_DIR}/site-packages/chipscopy-2024.1.dev1715183651.dist-info/
+    cp -r ${S}/chipscopy-2024.1.1717799899.dist-info/* ${D}${libdir}/${PYTHON_DIR}/site-packages/chipscopy-2024.1.1717799899.dist-info/
 }
